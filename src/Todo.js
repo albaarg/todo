@@ -24,6 +24,8 @@ const Todo = (props) => {
   const handleOpen = () => {
     setOpen(true);
   };
+  console.log(handleOpen);
+
   const updateTodo = () => {
     //update the todo with the new input text
 
@@ -36,6 +38,7 @@ const Todo = (props) => {
 
     setOpen(false);
   };
+  console.log(updateTodo);
   return (
     <>
       <Modal open={open} onClose={(e) => setOpen(false)}>
